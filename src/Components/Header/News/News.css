@@ -1,0 +1,159 @@
+.news{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding:20px 0;
+}
+.news__left{
+    padding-right: 20px;
+    flex:0.3 1;
+}
+.news__middle{
+    padding:0 20px;
+    flex:0.4 1;
+}
+.news__right{
+    flex:0.3 1;
+}
+.news__left__top h1{
+    color:#fff;
+    font-size:2rem;
+}
+.news__left__top h5,.news__left__bottom h5{
+    color:rgb(41, 174, 236);
+    font-size:1.1rem;
+}
+.news__left__top h3,.news__left__bottom h3{
+    font: size 1.2rem;
+    color:#fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.news__left__top p,.news__left__bottom p{
+    color:#ccc;
+    font-size: 0.9rem;
+}
+.news__left__top{
+    border-bottom: 1px solid #ccc;
+    padding-bottom:20px;
+}
+.news__left__bottom{
+    /* padding:20px; */
+}
+.news__left__bottom button{
+    color:#fff;
+    border:none;
+    background-color: #36094B;
+    padding:5px 20px;
+    transition:  all .5s;
+    cursor: pointer;
+}
+.news__left__bottom button:hover{
+    background-color: rgb(67, 127, 255);
+}
+.news__middle h2{
+    color:#fff;
+    font-size:2rem;
+}
+.news__middle h1{
+    font-size:2.5rem;
+    color:rgb(81, 191, 255);
+    font-weight: bolder;
+}
+.news__middle h5{
+    font-weight: bold;
+    font-size:1.2rem;
+    text-transform: uppercase;
+    color:#fff;
+}
+.news__middle p{
+    font-size:1rem;
+    color:#ccc;
+}
+.news__middle button:hover{
+    background-color: rgb(67, 127, 255);
+}
+.news__middle button{  cursor: pointer;
+    color:#fff;
+    border:none;
+    background-color: #36094B;
+    padding:5px 20px;
+    transition: all .5s;
+}
+.news__right h1{
+    color:#fff;
+    font-size:2rem;
+}
+.news__right > h3{
+    color:rgb(206, 20, 206);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size:1rem;
+}
+.news__right__item img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.news__right__item{
+    display: flex;
+    align-items: center;
+}
+.news__right__item__text{
+    padding:10px;
+}
+.news__right__item__text h3{
+    color:#fff;
+    font-size:1.1rem;
+}
+.news__right__item__text p{
+    font-size:0.9rem;
+    color:#ccc;
+}
+.news__right button{  cursor: pointer;
+    color:#fff;
+    border:none;
+    background-color: #36094B;
+    padding:5px 20px;
+    transition:  all .5s;
+}
+.news__right button:hover{
+    background-color: rgb(67, 127, 255);
+}
+.header__nav select{
+
+    opacity: 0;
+    visibility: hidden;
+}
+@media only screen and (max-width:1000px){
+    .news{
+        display: flex;
+        flex-direction: column;
+    }
+    .news__middle{
+        padding:20px 0;
+    }
+    .news__middle h1{
+        font-size:1.3rem;
+    }
+    .news__middle h5{
+        font-size:1.1rem;
+    }
+    .news__middle p{
+        font-size:0.9rem;
+    }
+    .header__nav nav{
+        position: relative;
+    }
+    .header__nav nav select{
+        opacity: 1;
+        visibility: visible;
+    }
+    .header__nav nav select{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+}

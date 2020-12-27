@@ -1,0 +1,88 @@
+.carousel__image img{
+    width: 100%;
+    height: 450px;
+
+    object-fit: cover;
+}
+.slick-slider > button.slick-arrow.slick-next::before , .slick-slider > button.slick-arrow.slick-prev::before{
+    /* font-size:2rem; */
+   
+}
+
+.carousel__items{
+    display: flex;
+    align-items: center;
+    background-color: #36094B;
+    padding: 20px;
+}
+.carousel__item{
+    display: flex;
+    align-items: center;
+
+   padding:0 15px;
+}
+.carousell__item__icon > .MuiSvgIcon-root{
+    color:#fff;
+  
+    border-radius: 50%;
+    font-size:2.0rem;
+    padding:15px;
+    margin-right: 15px;
+}
+.carousell__item__icon > .MuiSvgIcon-root.album{
+    background-color:#409de6;
+}
+.carousell__item__icon > .MuiSvgIcon-root.events{
+    background-color:#e88a00;
+}
+.carousell__item__icon > .MuiSvgIcon-root.localBar{
+    background-color:#b900b9;
+}
+.carousel__item:not(:last-child){
+    border-right:1px solid #9978a8;
+}
+.carousell__item__text h1{
+    color:#fff;
+    font-size:2.2rem;
+    font-weight: bold;
+}
+.carousell__item__text h3.drinks{
+    color:#b900b9;
+    font-size:1.1rem;
+}
+.carousell__item__text h3.events{
+    color:#e88a00;
+    font-size:1.1rem;
+}
+.carousell__item__text h3.music{
+    color:#409de6;
+    font-size:1.1rem;
+}
+.carousell__item__text p{
+    color:#ccc;
+    font-size:0.9rem;
+}
+@media only screen and (max-width:1000px){
+    .carousel__items{
+        display: flex;
+        flex-direction: column;
+    }
+    .carousel__item:not(:last-child){
+        border-right:none
+    }
+    .carousel__item{
+        align-items: flex-start;
+    }
+    .carousell__item__icon .MuiSvgIcon-root{
+        font-size:1rem;
+    }
+    .carousell__item__text h1{
+        font-size:1.2rem;
+    }
+    .carousell__item__text h3.drinks,.carousell__item__text h3.events,.carousell__item__text h3.album{
+        font-size:0.9rem;
+    }
+    .carousell__item__text p{
+        font-size:0.8rem;
+    }
+}
